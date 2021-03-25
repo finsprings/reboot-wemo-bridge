@@ -1,0 +1,4 @@
+#!/bin/sh
+WEMO_BRIDGE_IP=x.x.x.x
+AUTH=xxxxxxxx
+curl --silent --show-error --header "Authorization: Basic ${AUTH}" http://${WEMO_BRIDGE_IP}/reboot.shtml
